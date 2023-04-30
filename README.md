@@ -36,11 +36,14 @@ will be calculated based on geometries within feature collection.
 
 The example folder provides a script to show the usage.  data.geojson is saved in geojson.io from ![SF_street](./examples/SF_street.png).
 
-The output image from GeoDraw is ![geo_plot](./examples/geo_plot.png).
+The output image from GeoImageDraw is ![geo_plot](./examples/geo_plot.png).
+
+Speed benchmark
+--
+The dataset with 25000 geojson feature collections are tested. The average number of points per feature collection is 137. The throughput is 541 images per second.
 
 
-
-
-
-
-
+Credit
+--
+This library leverages the codes in [smopy](https://github.com/rossant/smopy) where geographical coordinates are converted to tile pixel coordinates.
+Good credit goes to [Cyrille Rossant](https://github.com/rossant).
