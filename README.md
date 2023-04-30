@@ -17,13 +17,19 @@ from GeoImageDraw import GeoDraw
 import json
 
 geojson_feature_collection = json.loads(geojson_data_str)
-pillow_image = GeoDraw.generate_image_from_geojson(geojson_feature_collection, z=19, lnglatbox=None, maxtiles=32, backgroundColor=0, foregroundColor='#ffffff')
+pillow_image = GeoDraw.generate_image_from_geojson(geojson_feature_collection, 
+                                                   z=19,
+                                                   lnglatbox=None,
+                                                   maxtiles=32,
+                                                   backgroundColor=0,
+                                                   foregroundColor='#ffffff')
 """
 Draw geometries in geojson collections and return pillow image
-color can be specified in properties with key name 'color' (e.g. "properties": {"color": "#065535"}
+color can be specified in properties with key name 'color' 
+(e.g. "properties": {"color": "#065535"}
 if color is not in the properties, the foregroundColor will be used
-lnglatbox: (lon_min, lat_min, lon_max, lat_max). If this value is None, bounded box will be calculated based on geometries within
-feature collection.
+lnglatbox: (lon_min, lat_min, lon_max, lat_max). If this value is None, bounded box will be calculated 
+based on geometries within feature collection.
 """
 
 ```
