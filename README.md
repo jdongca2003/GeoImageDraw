@@ -34,7 +34,7 @@ will be calculated based on geometries within feature collection.
 
 ```
 
-The example folder provides a script to show the usage.  data.geojson is saved in geojson.io from [SF_street](./examples/SF_street.png).
+The example folder provides a script to show the usage.  data.geojson is saved in geojson.io from ![SF_street](./examples/SF_street.png).
 
 
 
