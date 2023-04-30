@@ -28,13 +28,13 @@ Draw geometries in geojson collections and return pillow image
 color can be specified in properties with key name 'color' 
 (e.g. "properties": {"color": "#065535"}
 if color is not in the properties, the foregroundColor will be used
-lnglatbox: (lon_min, lat_min, lon_max, lat_max). If this value is None, bounded box will be calculated 
-based on geometries within feature collection.
+lnglatbox: (lon_min, lat_min, lon_max, lat_max). If this value is None, bounded box
+will be calculated based on geometries within feature collection.
 """
 
 ```
 
-The example folder provides a script to show the usage.
+The example folder provides a script to show the usage.  data.geojson is saved in geojson.io from [SF_street](./examples/SF_street.png).
 
 
 
